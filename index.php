@@ -1,7 +1,7 @@
 <?php
 
 // Instantiating the markdown parser
-require "../php-markdown/Michelf/Markdown.php";
+require "php-markdown/Michelf/Markdown.inc.php";
 
 $md = new \Michelf\Markdown();
 
