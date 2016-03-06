@@ -3,6 +3,8 @@
 // Instantiating the markdown parser
 require "php-markdown/Michelf/Markdown.inc.php";
 
+
+
 $md = new \Michelf\Markdown();
 
 $page["home"]["title"] = "HOME";
@@ -19,6 +21,25 @@ I AM A DOG. HERE ARE SOME THINGS I LIKE
 
 $page["bark"]["title"] = "BARKING";
 $page["bark"]["body"] = "ARF WOOF BARK BORK BORK YIP BARK BORK YIP BARK.";
+
+
+$page["stuff"]["title"] = "STUFF";
+$page["stuff"]["body"] = "# I am Chico and I like stuff!
+1. Food 
+2. Chewing on things
+3. Licking things
+4. Chasing the cat
+
+![Chico & Kat](/displayScaledImage.function.php)";
+
+$page["licks"]["title"] = "LICKS";
+$page["licks"]["body"] = "ARF WOOF BARK BORK BORK YIP BARK BORK YIP BARK.";
+
+$page["tail-chasing"]["title"] = "TAIL CHASING";
+$page["tail-chasing"]["body"] = "ARF WOOF BARK BORK BORK YIP BARK BORK YIP BARK.";
+
+$page["butt-sniffs"]["title"] = "BUTTS";
+$page["butt-sniffs"]["body"] = "ARF WOOF BARK BORK BORK YIP BARK BORK YIP BARK.";
 
 $page["404"]["title"] = "404";
 $page["404"]["body"] = "#404 \n File not found. \*sad whimper\*.";
