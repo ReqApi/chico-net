@@ -30,7 +30,8 @@ $page["stuff"]["body"] = "# I am Chico and I like stuff!
 3. Licking things
 4. Chasing the cat
 
-![Chico & Kat](/displayScaledImage.function.php)";
+![Chico & Kat](/image/500/chico-and-kat.jpg)
+![Chico & Kat](/image/400/chico-and-kat.jpg)";
 
 $page["licks"]["title"] = "LICKS";
 $page["licks"]["body"] = "ARF WOOF BARK BORK BORK YIP BARK BORK YIP BARK.";

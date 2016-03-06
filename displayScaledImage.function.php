@@ -1,7 +1,7 @@
 <?php
 
 
-function displayScaledImage($path, $outputFormat = "png", $width = null, $height = null) {
+function displayScaledImage($path = "", $outputFormat = "png", $width = null, $height = null) {
 	//SEXY function that dynamically scales an image from a file
 	//and outputs it to the browser
 	//requires a path and a width
@@ -9,6 +9,18 @@ function displayScaledImage($path, $outputFormat = "png", $width = null, $height
 	//default height calculated in relation to width
 	//default format is png
 
+	if (isset($_REQUEST["path"]) &&
+	isset($_REQUEST["format"]) &&
+	isset($_REQUEST["width"])){
+
+		$path = $_REQUEST["path"];
+		$outputFormat = $_REQUEST["format"];
+		$width = $_REQUEST["width"];
+
+		if(isset($_REQUEST["height"])){
+			$height = $_REQUEST["height"];
+		}
+	}
 
 	if($outputFormat == "png"){
 		$cleanFormat = "png";
@@ -51,7 +63,7 @@ function displayScaledImage($path, $outputFormat = "png", $width = null, $height
 
 }
 
-displayScaledImage("chico-and-kat.jpg", "gif", 200);
+displayScaledImage();
 
 /*
 $img = file_get_contents("chico-and-kat.jpg");
